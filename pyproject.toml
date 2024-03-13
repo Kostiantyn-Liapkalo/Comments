@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "comments"
+version = "0.1.0"
+description = ""
+authors = ["Kostiantyn <lynx87@ukr.net>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^5.0.3"
+djangorestframework = "^3.14.0"
+pillow = "^10.2.0"
+psycopg2 = "^2.9.9"
+djoser = "^2.2.2"
+djangorestframework-simplejwt = "^5.3.1"
+attrs = "^23.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
