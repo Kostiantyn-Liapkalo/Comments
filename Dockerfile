@@ -1,4 +1,4 @@
-FROM python:3.8.3
+FROM python:3.11.7
 
 WORKDIR /usr/src/app
 
@@ -9,7 +9,7 @@ RUN apt-get update \
     && apt-get install netcat -y
 RUN apt-get upgrade -y && apt-get install postgresql gcc python3-dev musl-dev -y
 RUN curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | POETRY_HOME=/opt/poetry python && \
-    cd /usr/local/bin && \
+    cd /usr/bin && \
     ln -s /opt/poetry/bin/poetry && \
     poetry config virtualenvs.create false
 
